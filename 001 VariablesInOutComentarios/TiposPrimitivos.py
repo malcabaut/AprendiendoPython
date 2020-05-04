@@ -48,14 +48,14 @@ print("Esto es un Array de varios tipos "+str(lista) +
 ####
 #   Tipos tupla
 ####
-lista = ('texto', 45, 13.14, 4 + 2j, True)
-print("Esto es un tupla de varios tipos "+str(lista) +
-      " tipo en python: " + str(type(lista)))
+tupla = ('texto', 45, 13.14, 4 + 2j, True)
+print("Esto es un tupla de varios tipos "+str(tupla) +
+      " tipo en python: " + str(type(tupla)))
 
 """ Esto no funcionaria ya que las tuplas no puede ser cambiadas.     
-lista[0] = "Cambio"
-print("Esto es un tupla de varios tipos "+str(lista) +
-      " tipo en python: " + str(type(lista)))
+tupla[0] = "Cambio"
+print("Esto es un tupla de varios tipos "+str(tupla) +
+      " tipo en python: " + str(type(tupla)))
 """
 ####
 #   Tipos diccionarios
