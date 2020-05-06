@@ -56,3 +56,7 @@ try:
     print(str(numero1)+" % "+str(numero2)+" = "+str(numero)+" --> RESTO")
 except:
     print("Intentado dividir por 0 bribón")
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b3ad7bfc8618d83f896bbe63fbbec72ade30157
