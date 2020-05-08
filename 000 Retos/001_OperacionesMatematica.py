@@ -33,8 +33,12 @@ numero = numero1 * numero2
 print(str(numero1)+" * "+str(numero2)+" = "+str(numero)+" --> MULTIPLICACION")
 
 # Potencia
-numero = numero1 ** numero2
-print(str(numero1)+" ^ "+str(numero2)+" = "+str(numero)+" --> POTENCIA")
+try:
+    numero = numero1 ** numero2
+    print(str(numero1)+" ^ "+str(numero2)+" = "+str(numero)+" --> POTENCIA")
+except:
+    print(str(numero1)+" ^ "+str(numero2)+" No crees que te has pasado.")
+
 
 # División
 try:
@@ -56,7 +60,3 @@ try:
     print(str(numero1)+" % "+str(numero2)+" = "+str(numero)+" --> RESTO")
 except:
     print("Intentado dividir por 0 bribón")
-<<<<<<< HEAD
-=======
-
->>>>>>> 1b3ad7bfc8618d83f896bbe63fbbec72ade30157
