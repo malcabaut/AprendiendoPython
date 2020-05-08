@@ -1,6 +1,6 @@
 import re  # para expresiones regulares.
 import datetime  # para guardar fechas.
-# solucion https://es.stackoverflow.com/questions/353554/introducir-una-fecha-mediante-input
+# Solución https://es.stackoverflow.com/questions/353554/introducir-una-fecha-mediante-input
 repetir = True  # Variable para controlar el bucle
 while repetir == True:  # Comprobamos que la variable se correcta.
     fecha = input("Introduce fecha en formato YYYY,MM,DD ->  ")# Solicitamos fecha
