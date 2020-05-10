@@ -12,7 +12,6 @@ print(frase)
 frase = re.sub(r'\s*del\s*(?=\d{4})', "/", frase)
 print(frase)
 
-
 '''
 for i in range(len(frase)):
     if ( i < len(frase)
