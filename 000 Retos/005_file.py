@@ -30,7 +30,7 @@ except:  # Si no es posible creamos un nuevo fichero.
 def Salir():
     global repetir, list
     print("Salir")
-    archivo = open("./000 Retos/fichero.txt", "a")  # Creamos el fichero
+    archivo = open("./000 Retos/fichero.txt", "w")  # Creamos el fichero
     for linea in list:
         archivo.write(linea +"\n")
     archivo.close()
