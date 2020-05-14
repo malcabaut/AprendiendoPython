@@ -9,38 +9,50 @@ incorporando nuevos o bien eliminarlos todos y empezar de cero.
 '''
 Podria hacerlo con un if
 import os
-print("El fichero existe.") if os.path.exists("fichero.txt") else print("Fichero no existe.")
+print("El fichero existe.") if os.path.exists(
+    "fichero.txt") else print("Fichero no existe.")
 '''
 repetir = True  # Variable para controlar el bucle
 list = []
 
 try:  # Intentamos abrir el fichero.
     # Abrimos el fichero para extraer la lista de nombres.
-    archivo = open("fichero.txt", "r")
+    archivo = open("./000 Retos/fichero.txt", "r")
+    for linea in archivo:
+        linea = linea.replace("\n","")
+        list.append(linea)
     archivo.close()
 except:  # Si no es posible creamos un nuevo fichero.
-    archivo = open("fichero.txt", "w")  # Creamos el fichero
+    archivo = open("./000 Retos/fichero.txt", "w")  # Creamos el fichero
     archivo.close()
 
+
 def Salir():
-    global repetir,list
+    global repetir, list
     print("Salir")
-    archivo = open("fichero.txt", "a")  # Creamos el fichero
-    for i in list:
-        archivo.write(i)
+    archivo = open("./000 Retos/fichero.txt", "a")  # Creamos el fichero
+    for linea in list:
+        archivo.write(linea +"\n")
     archivo.close()
     repetir = False
+
+
 def Agregar():
     print("Agregar")
-    list.append("Miguel")
+    list.append(input("Introduce nombre: "))
+
+
 def Imprimir():
     print("Imprimir")
     print(list)
+
+
 def Eliminar():
     print("Eliminar")
 
 
-elecciones = { 0: Salir, 1: Agregar, 2: Eliminar, 3: Imprimir} # Creamos un diccionario con las elecciones posibles.
+# Creamos un diccionario con las elecciones posibles.
+elecciones = {0: Salir, 1: Agregar, 2: Eliminar, 3: Imprimir}
 while repetir == True:  # Comprobamos que la variable se correcta.
     print('''
     #####  Gestion Agenda   #####
@@ -54,6 +66,6 @@ while repetir == True:  # Comprobamos que la variable se correcta.
         seleccion = int(input('Escoge una opcion: '))
     except:
         print("Utilicen los numeros")
-    elecciones[seleccion]() if (0<=seleccion & 3>=seleccion) else print("Selecciona una de las opciones")
-
+    elecciones[seleccion]() if (0 <= seleccion & 3 >= seleccion) else print(
+        "Selecciona una de las opciones")
 
