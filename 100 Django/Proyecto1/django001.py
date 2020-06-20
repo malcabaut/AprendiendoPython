@@ -1,4 +1,6 @@
 '''
+siguendo curso de https://www.youtube.com/playlist?list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB
+
 Estoy trabajando con Visual Studio Code
 Uso el siguiente comando para crear el proyecto
 C:\Users\usuario\AppData\Local\Programs\Python\Python38-32\Scripts\django-admin.exe startproject Proyecto1
@@ -11,4 +13,4 @@ Para encender el servidor
 
 C:\Users\usuario\AppData\Local\Programs\Python\Python38-32\python.exe .\manage.py runserver  
 
-'''            
+''' 
