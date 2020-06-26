@@ -1,6 +1,6 @@
 Me coloco en la carpeta donde quiero el proyecto y ejecuto
-$cd C:\Users\usuario\Documents\AprendiendoPython\101 Django\
-$C:\Users\usuario\AppData\Local\Programs\Python\Python38-32\Scripts\django-admin.exe startproject proyecto01
+$cd "C:\Users\usuario\Documents\AprendiendoPython\101 Django\"
+$C:\Users\usuario\AppData\Local\Programs\Python\Python38-32\Scripts\django-admin.exe startproject Proyecto04
 
 Entro dentro de la carpeta y creo la base de datos ejecutando
 $cd C:\Users\usuario\Documents\AprendiendoPython\101 Django\Proyecto01
@@ -11,3 +11,22 @@ Para iniciar el servidor
 estado en C:\Users\usuario\Documents\AprendiendoPython\101 Django\Proyecto01 ejecuto
 
 $C:\Users\usuario\AppData\Local\Programs\Python\Python38-32\python.exe .\manage.py runserver
+
+###################################### Conf. de plantillas
+En Proyecto0x/settings.py tenemos que cambiar la ruta de TEMPLATES>DIR
+
+    TEMPLATES = [
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+   >>         'DIRS': ["C:/Users/usuario/Documents/AprendiendoPython/101 Django/Proyecto04/Proyecto04/plantillas"],
+            'APP_DIRS': True,
+            'OPTIONS': {
+                'context_processors': [
+                    'django.template.context_processors.debug',
+                    'django.template.context_processors.request',
+                    'django.contrib.auth.context_processors.auth',
+                    'django.contrib.messages.context_processors.messages',
+                ],
+            },
+        },
+    ]

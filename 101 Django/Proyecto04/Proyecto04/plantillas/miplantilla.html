@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% include "superior\barra.html" %}
+        <h1> Proyecto 04 </h1>
+        <p> Hola Mundo mi nombre es. {{nombre_persona}} {{apellido1_persona}} {{p1.apellido2}}</p>
+        <p>Estamos con las plantilla. hoy es {{fecha.day}}/{{fecha.month}}/{{fecha.year}}</p>
+        <hr>
+        <h3>Temas del curso:</h3>
+        <ul>
+            <li>{{temas.0}}</li>
+            <li>{{temas.1}}</li>
+            <li>{{temas.2}}</li>
+            <li>{{temas.3}}</li>
+        </ul>
+        <h3>Temas del curso (buble):</h3>
+        <p>
+            <ul>
+            {% if temas %}    
+                {% for eltema in temas %}
+                    <li>{{eltema}}</li>
+                {% endfor %}
+            {% else %}
+                <p>No hay elemeptos</p>
+            {% endif %}   
+            </ul>
+        </p>
+
+        <p></p>
+
+
+    </body>
+</html>
