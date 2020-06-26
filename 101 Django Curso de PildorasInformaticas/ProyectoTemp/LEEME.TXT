@@ -1,0 +1,20 @@
+Mi primera página web con Django - Sesión 1
+
+Temario:
+Django
+* ¿Qué es y para qué sirve?
+- Frameworks
+- Modelo Vista Controlador
+- Quién usa Django
+
+* Instalación de Django y dependencias
+- Introducción
+- Modelos
+- Administrador 
+- Vistas
+- Urls
+- Templates
+
+Imparte: Oscar Roa/Making México
+
+https://www.youtube.com/watch?v=Pa_eLOujB34
